@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Update Item</h1>
+
+    <form method="POST">
+        Item name: <input type="text" name="name" value="{{ item.name }}" required>
+        <button type="submit">Update</button>
+    </form>
+
+    <a href="{{ url_for('index') }}">Cancel</a>
+{% endblock %}
