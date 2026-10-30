@@ -55,4 +55,8 @@ def delete(idNum):
 @app.route("/hello/")
 @app.route("/hello/<user_name>")
 def hello(user_name=None):
-    return render_template('home.html',user=user_name)
+    return render_template('home.html', user=user_name)
+
+
+if __name__ == '__main__':
+    app.run()
